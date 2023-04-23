@@ -1,0 +1,21 @@
+{
+  "name": "nome-do-seu-projeto",
+  "version": "1.0.0",
+  "description": "Descrição do seu projeto",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome": "cypress run --browser chrome",
+    "test:firefox": "cypress run --browser firefox",
+    "test:both": "npm run test:chrome && npm run test:firefox",
+    "test:chrome:headless": "cypress run --browser chrome --headless",
+    "test:firefox:headless": "cypress run --browser firefox --headless",
+    "test:both:headless": "npm run test:chrome:headless && npm run test:firefox:headless",
+    "cypress:open": "cypress open"
+  },
+  "author": "Gabriel Batista",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.1.1",
+    "cypress-cucumber-preprocessor": "^4.4.0"
+  }
+}
